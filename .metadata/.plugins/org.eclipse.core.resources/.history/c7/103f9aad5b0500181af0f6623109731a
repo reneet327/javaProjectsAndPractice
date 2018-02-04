@@ -1,0 +1,29 @@
+package com.ReneeThomas.objectClassPractice;
+
+public class student {
+
+	//class variables
+	String firstName;
+	String lastName;
+	String courseFocus;
+	
+	//create constructors
+	public student() {
+		firstName="";
+		lastName="";
+		courseFocus="";
+		System.out.println("Student object created!");
+	}
+	
+	//overloaded constructor
+	public student(fName, Lname, Focus) {
+		
+	}
+	
+}
+
+
+
+}
+
+

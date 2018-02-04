@@ -1,0 +1,13 @@
+package com.ReneeThomas.builtInClassPractice;
+//import any built in classes
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class builtInClassPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

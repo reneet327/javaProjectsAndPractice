@@ -1,0 +1,17 @@
+package com.ReneeThomas.JavaProject5;
+
+public class Person {
+	//Global variables
+	String firstName;
+	String lastName;
+	int age;
+	
+	//regular contructor
+	public Person() {
+		firstName = "";
+		lastName = "";
+		age = 0;
+	}
+	//overloaded constructor
+	
+}

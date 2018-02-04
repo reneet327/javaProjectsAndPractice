@@ -1,0 +1,13 @@
+package com.ReneeThomas.JavaProject5;
+
+public class JavaProject5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Call constructors
+		Person person1 = new Person();
+
+	}
+
+}

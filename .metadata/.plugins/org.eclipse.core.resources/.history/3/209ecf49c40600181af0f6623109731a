@@ -1,0 +1,54 @@
+package com.ReneeThomas.JavaProject5;
+
+public class Person {
+	//Global variables
+	String firstName;
+	String lastName;
+	int age;
+	
+	//regular constructor
+	public Person() {
+		firstName = "";
+		lastName = "";
+		age = 0;
+	}
+	//overloaded constructor main
+	public Person(String f, String l, int a) {
+		firstName = f;
+		lastName = l;
+		age = a;
+	}
+	
+	//overloaded constructor First Name
+	public Person(String fname) {
+		firstName = fname;
+	}
+	
+	//overloaded constructor First and Last Names
+	public Person(String fn, String ln) {
+		firstName = fn;
+		lastName = ln;
+	}
+	
+	//setters
+	public void setFirstName(String fn) {
+		firstName = fn;
+	}
+	public void lastName(String ln) {
+		lastName = ln;
+	}
+	public void setAge(int a) {
+		age = a;
+	}
+	
+	//getters
+	public String getFirstName() {
+		return firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public int getAge() {
+		return age;
+	}
+}

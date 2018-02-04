@@ -1,0 +1,22 @@
+package com.ReneeThomas.objectClassPractice;
+
+public class objectClassPractice {
+
+	public static void main(String[] args) {
+		//test both types of constructors
+		student student1 = new student();
+		student student2 = new student("Renee", "Thomas", "Java");
+		
+		// create a variable to input the first name of student 2
+		String firstNameStudent2 = student2.getFirstName();
+		System.out.println(firstNameStudent2);
+		
+		//change first name of object then print it out
+		
+		// create a variable to input the first name of student 2
+				firstNameStudent2 = student2.setFirstName("Susan");
+				System.out.println(firstNameStudent2);
+
+	}
+
+}

@@ -1,0 +1,43 @@
+package com.ReneeThomas.JavaProject4;
+
+public class JavaProject4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//variables		
+		int numQuad = quadrupleMe(5);
+		
+		//print out the function
+		System.out.println(numQuad);		
+	}
+	
+	/* You should leverage what you have learned about methods to create a method called doubleMe() which takes 
+	 * in an integer as a parameter, doubles that value, and returns the newly doubled value. Print out the result 
+	 * of the number at the beginning of the method and the result after being doubled.
+
+Stretch Goal #1
+Create a new method called quadrupleMe() that takes in a number, quadruples the parameter, and returns the newly 
+doubled value. It should use the doubleMe() method to double the value twice. Print out the result of the number 
+at the beginning of the method and after being quadrupled.
+
+Stretch Goal #2
+Write a new method called doubleMe() which takes in two parameters. The first parameter should be the value that 
+should be doubled, and the second parameter should be how many times you want to double that value. For example, 
+if the value 2 and 3 were passed in, the value would be doubled one to produce 4, twice to produce 8, and then 
+three times to produce 16. Print out the result of the number at the beginning of the method and after being doubled 
+some number of times.
+
+*/
+	
+	public static int doubleMe(int number) {
+		System.out.println(number + "\n");
+		return(number * number);
+	}
+	
+	public static int quadrupleMe(int number) {
+		int doubleNum = doubleMe(number);
+		return(doubleNum*doubleNum);
+	}
+
+}

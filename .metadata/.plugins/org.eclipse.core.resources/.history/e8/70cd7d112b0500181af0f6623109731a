@@ -1,0 +1,19 @@
+package com.ReneeThomas.JavaProject3;
+
+public class JavaProject3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//variables
+		int[] numArray = new int[5];
+		String userInput;
+		String instructions = "Enter a number: ";
+		
+		System.out.println(instructions);
+		userInput = StudentHelper.ReadInputString();
+		
+
+	}
+
+}

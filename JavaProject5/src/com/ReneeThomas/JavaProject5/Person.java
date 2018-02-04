@@ -1,0 +1,64 @@
+package com.ReneeThomas.JavaProject5;
+
+public class Person {
+	//Global variables
+	String firstName;
+	String lastName;
+	int age;
+	
+	//regular constructor
+	public Person() {
+		firstName = "";
+		lastName = "";
+		age = 0;
+		System.out.println("You created a new person!");
+	}
+	//overloaded constructor main
+	public Person(String f, String l, int a) {
+		firstName = f;
+		lastName = l;
+		age = a;
+		System.out.println("You created a new person named: "+ firstName + " " + lastName + " that is " + age + "years old.");
+	}
+	
+	//overloaded constructor First Name
+	public Person(String fname) {
+		firstName = fname;
+		System.out.println("You created a new person named: " + firstName);
+	}
+	
+	//overloaded constructor First and Last Names
+	public Person(String fn, String ln) {
+		firstName = fn;
+		lastName = ln;
+		System.out.println("You created a new person named: "+ firstName + " " + lastName);
+	}
+	
+	//setters
+	public void setFirstName(String fn) {
+		firstName = fn;
+	}
+	public void setLastName(String ln) {
+		lastName = ln;
+	}
+	public void setAge(int a) {
+		if(a <0) {
+			age = 0;
+			System.out.println("You need to enter a real age.");
+		}else {
+			age = a;
+		}
+		
+	}
+	
+	//getters
+	public String getFirstName() {
+		return firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public int getAge() {
+		return age;
+	}
+}

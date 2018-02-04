@@ -1,0 +1,37 @@
+package com.ReneeThomas.JavaProject5;
+
+public class JavaProject5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Call constructors
+		//default
+		Person person1 = new Person();
+		
+		//overloaded First Name
+		Person person2 = new Person("Renee");
+		
+		//overloaded First and Last Names		
+		Person person3 = new Person("Will", "Diamond");
+		
+		//overloaded 	
+		Person person4 = new Person("Winston", "Pintor", 26);
+		
+		person1.setFirstName("Alexa");
+		person1.setLastName("Abalos");
+		person1.setAge(24);
+		
+		//Set age Person2
+		person2.setAge(-40);
+		System.out.println(person2.getFirstName() + " is: " + person2.getAge());
+		
+		
+		System.out.println(person1.getFirstName() + " " + person1.getLastName() + " is " + person1.getAge() + ".");
+		
+		
+		
+
+	}
+
+}

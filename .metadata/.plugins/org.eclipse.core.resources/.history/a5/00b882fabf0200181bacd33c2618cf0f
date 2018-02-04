@@ -1,0 +1,14 @@
+package com.ReneeThomas.ArrayPractice;
+
+public class ArrayPractice {
+
+	public static void main(String[] args) {
+		// variables
+		String [] students = {Joshua Alexander, Carol Thomas, Marion Green, Edward Johnson, Katherine Jones, Jared Williams};
+		
+		//print the first name in the array
+		System.out.println(students[0]);
+
+	}
+
+}
