@@ -108,29 +108,30 @@ public class Employee {
     	}
 
     //setters
-    	public String setStreetAddress(String streetAddress){
-    		//this.streetAddress = streetAddress;
-    		return EmployeeBuilder.streetAddress = streetAddress;
+    	public EmployeeBuilder setStreetAddress(String streetAddress){
+    		this.streetAddress = streetAddress;
+    		return this;
     	}
     	
-    	public String setCity(String city){
+    	public EmployeeBuilder setCity(String city){    		
+    			this.city = city;
+    			return this;
+    	}
+    	
+    	public EmployeeBuilder setState(String state){    		
+    		 this.state = state;
+    		 return this;
+    	}
+    	
+    	public EmployeeBuilder setZip(int zip){
     		
-    		return EmployeeBuilder.city = city;
+    		 this.zipCode = zip;
+    		 return this;
     	}
     	
-    	public String setState(String state){
-    		
-    		return this.state = state;
-    	}
-    	
-    	public int setZip(int zip){
-    		
-    		return this.zipCode = zip;
-    	}
-    	
-    	public String setPhoneNumber(String phoneNumber){
-            
-            return this.phoneNumber = phoneNumber;
+    	public EmployeeBuilder setPhoneNumber(String phoneNumber){            
+             this.phoneNumber = phoneNumber;
+             return this;
         }
     	
     	 // last method in `EmployeeBuilder` class
