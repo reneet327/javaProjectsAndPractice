@@ -6,7 +6,7 @@ public class Employee {
     private String lastName;
     private String jobTitle;
     private float salary;
-    private EmployeeBuilder b = new EmployeeBuilder();
+    
     
     
     // optional parameters
@@ -16,7 +16,7 @@ public class Employee {
     private int zipCode;
     private String phoneNumber;
 
-    private Employee(EmployeeBuilder builder){
+    public Employee(EmployeeBuilder builder){
         this.firstName = builder.firstName;
         this.lastName = builder.lastName;
         this.jobTitle = builder.jobTitle;
@@ -28,6 +28,45 @@ public class Employee {
         this.phoneNumber = builder.phoneNumber;
 
     }
+    
+    //getters
+    
+    public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	public String getStreetAddress() {
+		return streetAddress;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public int getZipCode() {
+		return zipCode;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public float getSalary() {
+		return salary;
+	}   
+
     
     
 
@@ -42,8 +81,8 @@ public class Employee {
     	private float salary;
     	
     //optional variables
-    	private static String streetAddress;
-    	private static String city;
+    	private String streetAddress;
+    	private String city;
     	private String state;
     	private int zipCode;
     	private String phoneNumber;
