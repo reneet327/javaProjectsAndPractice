@@ -6,6 +6,8 @@ public class Employee {
     private String lastName;
     private String jobTitle;
     private float salary;
+    private EmployeeBuilder b = new EmployeeBuilder();
+    
     
     // optional parameters
     private String streetAddress;
@@ -26,6 +28,8 @@ public class Employee {
         this.phoneNumber = builder.phoneNumber;
 
     }
+    
+    
 
 	// nest EmployeeBuilder class
    
@@ -38,14 +42,26 @@ public class Employee {
     	private float salary;
     	
     //optional variables
-    	private String streetAddress;
-    	private String city;
+    	private static String streetAddress;
+    	private static String city;
     	private String state;
     	private int zipCode;
     	private String phoneNumber;
     	
     //Constructor
-    	public EmployeeBuilder(String firstName, String lastName, String jobTitle, float salary){}
+    	EmployeeBuilder() {
+    		this.firstName = "";
+        	this.lastName = "";
+            this.jobTitle = "";
+            this.salary = 0.0f;
+            this.streetAddress = "";
+        	this.city = "";
+        	this.state = "";
+        	this.zipCode = 0;
+        	this.phoneNumber = "";
+    	}
+    	
+    	EmployeeBuilder(String firstName, String lastName, String jobTitle, float salary) {
     	this.firstName = firstName;
     	this.lastName = lastName;
         this.jobTitle = jobTitle;
@@ -53,29 +69,29 @@ public class Employee {
     	}
 
     //setters
-    	public EmployeeBuilder setStreetAddress(String streetAddress){
-    		this.streetAddress = streetAddress;
-    		return this;
+    	public String setStreetAddress(String streetAddress){
+    		//this.streetAddress = streetAddress;
+    		return EmployeeBuilder.streetAddress = streetAddress;
     	}
     	
-    	public EmployeeBuilder setCity(String city){
-    		this.city = city;
-    		return this;
+    	public String setCity(String city){
+    		
+    		return EmployeeBuilder.city = city;
     	}
     	
-    	public EmployeeBuilder setState(String state){
-    		this.state = state;
-    		return this;
+    	public String setState(String state){
+    		
+    		return this.state = state;
     	}
     	
-    	public EmployeeBuilder setZip(int zip){
-    		this.zipCode = zip;
-    		return this;
+    	public int setZip(int zip){
+    		
+    		return this.zipCode = zip;
     	}
     	
-    	public EmployeeBuilder setPhoneNumber(String phoneNumber){
-            this.phoneNumber = phoneNumber;
-            return this;
+    	public String setPhoneNumber(String phoneNumber){
+            
+            return this.phoneNumber = phoneNumber;
         }
     	
     	 // last method in `EmployeeBuilder` class
