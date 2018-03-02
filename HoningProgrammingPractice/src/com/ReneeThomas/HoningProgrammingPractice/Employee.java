@@ -16,7 +16,8 @@ public class Employee {
     private int zipCode;
     private String phoneNumber;
 
-    public Employee(EmployeeBuilder builder){
+ // an EmployeeBuilder object passed into the default constructor.
+    private Employee(EmployeeBuilder builder){
         this.firstName = builder.firstName;
         this.lastName = builder.lastName;
         this.jobTitle = builder.jobTitle;
@@ -26,8 +27,8 @@ public class Employee {
         this.state = builder.state;
         this.zipCode = builder.zipCode;
         this.phoneNumber = builder.phoneNumber;
-
     }
+
     
     //getters
     
