@@ -25,10 +25,10 @@ public class TaskList {
 	public void addItem() {
 		//Ask user which item they want to add
 		System.out.println(whichItem);
-		while(userS != "x" ) {
+		do {
 		userS = scan.nextLine();
 		list.add(userS);	
-		}
+		}while(userS != "x" );
 		printList();
 	}
 	
