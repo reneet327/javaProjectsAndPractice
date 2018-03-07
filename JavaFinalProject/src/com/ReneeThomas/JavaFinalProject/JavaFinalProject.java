@@ -13,16 +13,7 @@ public class JavaFinalProject {
 		//TaskList tl = new TaskList();
 		//add an item to the new array
 		//tl.addItem();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+				
 	}
 
 }
